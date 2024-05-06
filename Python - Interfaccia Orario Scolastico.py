@@ -2,7 +2,6 @@ import tkinter as tk
 import minizinc
 from tkinter import ttk
 from sympy import solve
-import os
 
 # Funzione per risolvere il problema MiniZinc
 def risolvi_minizinc():
@@ -11,7 +10,6 @@ def risolvi_minizinc():
     numeroStudenti = [int(studenti1A.get()), int(studenti1B.get())]
 
     # Carica il modello MiniZinc
-    print("Directory corrente:", os.getcwd())
     modello = minizinc.Model(r"C:\Users\SOFIA\OneDrive - unibs.it\Desktop\Progetto Sistemi Intelligenti\Minizinc - Pianificazione orario scolastico.mzn")
     
     # Crea un'istanza del modello
