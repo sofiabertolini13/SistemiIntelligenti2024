@@ -7,5 +7,5 @@ Inoltre, viene presentata anche l’occupazione di ciascuna aula in ogni ora del
 
 ## Istruzioni per l'uso
 1. Scaricare il codice Minizinc e il codice Python
-2. Cambiare il percorso presente nel codice Python con il nuovo percorso riferito alla posizione del Minizinc sul PC
+2. Cambiare il percorso presente nel codice Python con il nuovo percorso riferito alla posizione del Minizinc sul PC (riga 15)
 3. Avviare il programma tramite Python
