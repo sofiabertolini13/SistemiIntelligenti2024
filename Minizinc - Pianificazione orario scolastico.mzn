@@ -182,7 +182,7 @@ solve satisfy;
 
 
 % Stampare l'orario professori per la Classe1A
-output ["Orario professori per Classe1A:\n"] ++
+output ["Orario Classe1A:\n"] ++
 ["\t" ++ show(g) ++ "\t" | g in Giorno] ++
 [ "\n" ++ show(o) ++ "\t" ++ 
 %concat([show(orarioLezioni[Classe1A, o, g]) ++ if string_length(show(orarioLezioni[Classe1A, o, g])) < 8 then "\t\t" else "\t" endif | g in Giorno]) ++ "\n" | o in Ora]
@@ -192,7 +192,7 @@ concat([show(orarioLezioni[Classe1A, o, g]) ++ "\t\t" | g in Giorno]) ++ "\n" | 
 ++ ["\n\n"] % Riga vuota tra gli orari delle due classi
 
 % Stampare l'orario professori per la Classe1B
-++ ["Orario professori per Classe1B:\n"] ++
+++ ["Orario Classe1B:\n"] ++
 ["\t" ++ show(g) ++ "\t" | g in Giorno] ++
 [ "\n" ++ show(o) ++ "\t" ++ 
 % concat([show(orarioLezioni[Classe1B, o, g]) ++ if string_length(show(orarioLezioni[Classe1B, o, g])) < 8 then "\t\t" else "\t" endif | g in Giorno]) ++ "\n" | o in Ora]
